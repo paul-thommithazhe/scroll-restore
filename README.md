@@ -1,7 +1,7 @@
 # scroll_restore
 
 [![pub package](https://img.shields.io/pub/v/scroll_restore.svg)](https://pub.dev/packages/scroll_restore)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/paul-thommithazhe/scroll_restore/dart.yml?branch=main)](https://github.com/paul-thommithazhe/scroll-restore/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/paul-thommithazhe/scroll-restore/dart.yml?branch=main)](https://github.com/paul-thommithazhe/scroll-restore/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 `scroll_restore` is a tiny Flutter package that **automatically saves and restores** the scroll position of any scrollable widget—across rebuilds, hot reloads, navigation pops/pushes, and even app restarts. No boilerplate, no manual state management: just wrap your `ListView`, `GridView`, or any scrollable, and it “just works.”
