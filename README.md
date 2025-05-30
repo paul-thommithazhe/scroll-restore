@@ -20,7 +20,6 @@
 
 ## 📦 Installation
 
-Add to your **app**’s `pubspec.yaml`:
 
 ```yaml
 dependencies:
