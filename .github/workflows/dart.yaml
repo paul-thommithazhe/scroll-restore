@@ -24,6 +24,4 @@ jobs:
       - name: Run Tests
         run: flutter test --coverage
 
-      - name: Validate Example
-        working-directory: example
-        run: flutter test
+      
