@@ -11,16 +11,17 @@ class ScrollRestore extends StatefulWidget {
   final Widget Function(BuildContext context, ScrollController controller) builder;
 
   const ScrollRestore({
-    Key? key,
+    super.key,
     required this.id,
     required this.builder,
-  }) : super(key: key);
+  });
 
   @override
-  _ScrollRestoreState createState() => _ScrollRestoreState();
+  ScrollRestoreState createState() => ScrollRestoreState();
 }
 
-class _ScrollRestoreState extends State<ScrollRestore> {
+
+class ScrollRestoreState extends State<ScrollRestore> {
   late final ScrollController _controller;
   late final SharedPreferences _prefs;
 
