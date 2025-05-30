@@ -4,7 +4,9 @@ import 'package:scroll_restore/src/scroll_restore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  testWidgets('ScrollRestore restores saved offset on init', (WidgetTester tester) async {
+  testWidgets('ScrollRestore restores saved offset on init', (
+    WidgetTester tester,
+  ) async {
     // 1) Mock a saved offset of 100.0 pixels
     SharedPreferences.setMockInitialValues({'test-list': 100.0});
 
@@ -33,9 +35,9 @@ void main() {
     );
 
     // 4) Allow initState and our postFrameCallback to run
-    await tester.pump();                       // kicks off initState()
-    await tester.pump(const Duration(milliseconds: 100)); 
-    await tester.pumpAndSettle();              // waits for any remaining frames
+    await tester.pump(); // kicks off initState()
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pumpAndSettle(); // waits for any remaining frames
 
     // 5) Now assert the controller offset
     expect(capturedController, isNotNull);

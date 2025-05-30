@@ -7,9 +7,7 @@ class ExampleApp extends StatelessWidget {
   const ExampleApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const ScrollDemo(),
-    );
+    return MaterialApp(home: const ScrollDemo());
   }
 }
 
@@ -20,7 +18,7 @@ class ScrollDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('ScrollRestore Demo')),
-      //scrollrestore 
+      //scrollrestore
       body: ScrollRestore(
         id: 'demo-list',
         builder: (context, controller) {

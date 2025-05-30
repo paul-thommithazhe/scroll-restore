@@ -1,25 +1,20 @@
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 /// Wrap any scrollable widget to remember its scroll offset (persisted under [id]).
 class ScrollRestore extends StatefulWidget {
   /// Unique identifier for this scrollable. Used as the shared_preferences key.
   final String id;
 
   /// Build your scrollable, passing in the provided [controller].
-  final Widget Function(BuildContext context, ScrollController controller) builder;
+  final Widget Function(BuildContext context, ScrollController controller)
+  builder;
 
-  const ScrollRestore({
-    super.key,
-    required this.id,
-    required this.builder,
-  });
+  const ScrollRestore({super.key, required this.id, required this.builder});
 
   @override
   ScrollRestoreState createState() => ScrollRestoreState();
 }
-
 
 class ScrollRestoreState extends State<ScrollRestore> {
   late final ScrollController _controller;
