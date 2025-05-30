@@ -104,3 +104,7 @@ Supports clamp-to-boundary and async init
 📝 License
 MIT © Paul Thommithazhe
 
+## 👤 Author
+**Paul *Thommithazhe**  
+📧 [paul04kply@gmail.com](mailto:paul04kply@gmail.com)  
+🔗 [GitHub](https://github.com/paul-thommithazhe)

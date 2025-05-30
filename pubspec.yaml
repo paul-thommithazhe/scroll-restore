@@ -1,35 +1,25 @@
 name: scroll_restore
-description: "  A Flutter plugin that automatically saves and restores
-  scroll positions for any scrollable widget."
+description: A Flutter plugin that automatically saves and restores scroll positions for any scrollable widget.
+
+version: 0.1.3+1
 
 homepage: https://github.com/paul-thommithazhe/scroll-restore
 repository: https://github.com/paul-thommithazhe/scroll-restore
-
-
-version: 0.1.3
+documentation: https://github.com/paul-thommithazhe/scroll-restore#readme
 
 environment:
   sdk: ^3.8.0
 
-
 dependencies:
   flutter:
     sdk: flutter
-
- 
   cupertino_icons: ^1.0.8
   shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  
   flutter_lints: ^5.0.0
 
-
 flutter:
-
   uses-material-design: true
-
-  
