@@ -20,23 +20,25 @@
 
 ## 📦 Installation
 
-
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
 
-  scroll_restore: ^0.1.0
-
+  scroll_restore: ^0.1.3+1
+```
 
 Then run:
 
-
+```bash
 flutter pub get
-🚀 Quick Start
+```
+
+## 🚀 Quick Start
+
 Wrap your scrollable in ScrollRestore, giving it a unique id:
 
-
+```dart
 import 'package:flutter/material.dart';
 import 'package:scroll_restore/scroll_restore.dart';
 
@@ -62,48 +64,64 @@ class ChatScreen extends StatelessWidget {
     );
   }
 }
-id: persisted key in SharedPreferences. Use a different id for each scrollable you want to remember.
+```
 
-The package takes care of saving .offset on every scroll and jumping to it on next build.
+`id`: persisted key in SharedPreferences. Use a different id for each scrollable you want to remember.
 
-📖 Example
+The package takes care of saving `.offset` on every scroll and jumping to it on next build.
+
+## 📖 Example
+
 A full example app lives in the example/ folder:
 
+```bash
 cd example
 flutter pub get
 flutter run
+```
+
 Try scrolling halfway, hot-reloading, navigating away/back, or restarting the app—you’ll stay at the same scroll position!
 
-🧪 Testing
+## 🧪 Testing
+
 To run the package’s unit & widget tests:
 
+```bash
 flutter test
+```
 
-⚙️ CI
+## ⚙️ CI
+
 We use GitHub Actions to:
 
+```bash
 flutter analyze
 
-flutter test (package & example)
+flutter test # package & example
+```
 
-Workflow file: .github/workflows/dart.yml
+Workflow file: `.github/workflows/dart.yml`
 
-🛠️ Caveats & Tips
+## 🛠️ Caveats & Tips
+
 If the saved offset exceeds the new content’s max scroll, it’s clamped to the end.
 
-Works with any ScrollController-driven widget: ListView, GridView, CustomScrollView, etc.
+Works with any ScrollController-driven widget: `ListView`, `GridView`, `CustomScrollView`, etc.
 
-You can nest multiple ScrollRestore widgets on one screen by using different ids.
+You can nest multiple `ScrollRestore` widgets on one screen by using different ids.
 
-📜 Changelog
+## 📜 Changelog
+
 0.1.0
 Initial release with basic save & restore logic
 
 Supports clamp-to-boundary and async init
 
-📝 License
+## 📝 License
+
 MIT © Paul Thommithazhe
 
 ## 👤 Author
+
 Paul Thommithazhe
 🔗 GitHub: [https://github.com/paul-thommithazhe](https://github.com/paul-thommithazhe)
